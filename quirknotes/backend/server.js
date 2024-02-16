@@ -4,7 +4,7 @@ import cors from "cors";
 
 const app = express();
 const PORT = 4000;
-const mongoURL = "mongodb://127.0.0.1:27017";
+const mongoURL = "mongodb://127.0.0.1:12233";
 const dbName = "quirknotes";
 
 // Connect to MongoDB
@@ -30,7 +30,7 @@ app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
   });
 
-app.use(express.json());
+app.use(cors());
 
 // Collections to manage
 const COLLECTIONS = {
