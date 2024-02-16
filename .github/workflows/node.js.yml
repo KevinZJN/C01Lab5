@@ -23,7 +23,7 @@
               mongodb:
                   image: mongo
                   ports:
-                    - 12233:12233
+                    - 27017:27017
                   options: --name mongodb
 
           steps:
