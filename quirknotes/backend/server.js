@@ -4,7 +4,7 @@ import cors from "cors";
 
 const app = express();
 const PORT = 4000;
-const mongoURL = "mongodb://127.0.0.1:27017";
+const mongoURL = "mongodb://127.0.0.1:12305";
 const dbName = "quirknotes";
 
 // Connect to MongoDB
